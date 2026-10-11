@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "streamviewer"
+dynamic = ["version"]
+description = "Domain-blind array streaming viewers: protocol, receivers and napari/Fiji servers"
+authors = [{name = "Tristan Simas", email = "tristan.simas@mail.mcgill.ca"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/OpenHCSDev/streamviewer"
+
+[tool.hatch.version]
+path = "src/streamviewer/__init__.py"
